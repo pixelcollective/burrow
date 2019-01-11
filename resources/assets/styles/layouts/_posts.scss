@@ -1,0 +1,21 @@
+body > main > article {
+  @include mv5;
+
+  header {
+    @include mb2;
+  }
+
+  .entry-title {
+    @include mb3;
+    @include mt2;
+  }
+
+  .byline.author.vcard {
+    @include mt3;
+    @include mb5;
+  }
+
+  .entry-jump a {
+    @include button;
+  }
+}

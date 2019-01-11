@@ -1,0 +1,49 @@
+body {
+  > header {
+    @include pt3;
+    @include pb3;
+
+    a:first-child {
+      @include ttu;
+      @include no-underline;
+      @include near-black;
+      @include f6;
+      @include fw9;
+      @include tracked;
+    }
+  }
+
+  > main > header {
+    @include pt2;
+
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+      @include f-headline;
+      @include sans-serif;
+    }
+
+    > h1 > span,
+    > h2 > span,
+    > h3 > span,
+    > h4 > span,
+    > h5 > span,
+    > h6 > span {
+      @include f-subheadline;
+      @include sans-serif;
+    }
+
+    > h1 {
+      @include f1;
+      @include f-headline;
+    }
+
+    > h1 > span {
+      @include db;
+      @include f2;
+    }
+  }
+}

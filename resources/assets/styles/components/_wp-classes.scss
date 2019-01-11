@@ -1,0 +1,58 @@
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+/** Media alignment */
+.alignnone {
+  @include ml0;
+  @include mr0;
+  @include mw-100;
+  @include h-auto;
+}
+
+.aligncenter {
+  @include db;
+  @include mb2;
+  @include h-auto;
+}
+
+.alignleft,
+.alignright {
+  @include mb2;
+  @include h-auto;
+}
+
+.alignleft {
+  @media (min-width: 30rem) {
+    @include fl;
+    @include mr2;
+  }
+}
+
+.alignright {
+  @media (min-width: 30rem) {
+    @include fr;
+    @include ml2;
+  }
+}
+
+/** Captions */
+
+// TODO: .wp-caption {}
+// TODO: .wp-caption img {}
+// TODO: .wp-caption-text {}
+
+/** Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: #000;
+  background: #fff;
+}

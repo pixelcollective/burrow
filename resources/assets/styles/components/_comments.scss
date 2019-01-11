@@ -1,0 +1,58 @@
+article > main.entry-content + footer {
+  @include pt2;
+  @include mv4;
+
+  > section > h3 {
+    @include mt5;
+    @include mb4;
+    @include lh-solid;
+  }
+
+  .comment-meta {
+    @include flex;
+    @include flex-auto;
+    @include flex-nowrap;
+    @include flex-grow-1-gts;
+
+    .comment-author.vcard,
+    .comment-metadata {
+      @include w-100;
+      @include flex;
+      @include items-center;
+      @include w-100-gts;
+    }
+
+    .comment-metadata {
+      @include justify-end-gts;
+      @include justify-start;
+
+      time {
+        @include f7;
+      }
+    }
+
+    .says {
+      @include dn;
+    }
+
+    a {
+      @include dark-gray;
+    }
+  }
+
+  .comment-content * {
+    @include f7;
+  }
+
+  a.comment-reply-link {
+    @include button;
+    @include pb0;
+    @include f7;
+    @include ttu;
+  }
+
+  .comment-respond {
+    @include pt2;
+    @include mv4;
+  }
+}

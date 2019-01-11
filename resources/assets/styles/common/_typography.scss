@@ -1,0 +1,42 @@
+body {
+  @include sans-serif;
+
+  h1 {
+    @include f1;
+  }
+
+  h2 {
+    @include f2;
+  }
+
+  h3 {
+    @include f3;
+  }
+
+  h4 {
+    @include f4;
+  }
+
+  h5 {
+    @include f5;
+  }
+
+  h6 {
+    @include f6;
+  }
+
+  p,
+  time {
+    @include f5;
+    @include lh-copy;
+  }
+
+  time {
+    @include f7;
+    @include ttu;
+  }
+
+  a {
+    @include no-underline;
+  }
+}

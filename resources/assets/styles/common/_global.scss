@@ -1,0 +1,19 @@
+body {
+  > header,
+  > main,
+  > footer {
+    @include mt2;
+  }
+
+  > header,
+  > footer,
+  > main > header,
+  > main > article > header,
+  > main > article > footer {
+    @include mw6-m;
+    @include mw7-l;
+    @include ph2;
+    @include ml-auto;
+    @include mr-auto;
+  }
+}
