@@ -43,12 +43,21 @@ add_filter('the_content', function($content) {
     // Find all the aligned blocks
     $blocks = $qp->find('.alignwide, .alignfull');
     // Add wrap
-    foreach ( $blocks as $block ) :
+    foreach ($blocks as $block) :
         $block->wrap('<div class="wrap"></div>');
     endforeach;
     // Return the modified post content
     return $qp->find('body')->html5();
 }, 9);
+
+/**
+ * Add "gutenberg" to post classes
+ */
+add_filter('post_class', function ($classes) {
+    global $post;
+    $classes[] = 'gutenberg';
+    return $classes;
+});
 
 /**
  * Add "… Continued" to the excerpt

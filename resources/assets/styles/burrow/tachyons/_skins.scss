@@ -50,6 +50,7 @@
 @mixin light-gray {    color: $light-gray; }
 @mixin near-white {    color: $near-white; }
 @mixin white {         color: $white; }
+@mixin color-initial {       color: initial; }
 
 @mixin dark-red { color: $dark-red; }
 @mixin red { color: $red; }
@@ -114,6 +115,8 @@
 @mixin bg-near-white {    background-color: $near-white; }
 @mixin bg-white {         background-color: $white; }
 @mixin bg-transparent {   background-color: $transparent; }
+@mixin bg-primary {       background-color: $color-primary; }
+@mixin bg-secondary {     background-color: $color-secondary; }
 
 @mixin bg-dark-red { background-color: $dark-red; }
 @mixin bg-red { background-color: $red; }

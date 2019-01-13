@@ -1,0 +1,12 @@
+a {
+  @include black;
+  @include fw7;
+}
+
+p > a {
+  @include bw5;
+  @include bb;
+  @include bl-0;
+  @include br-0;
+  @include bt-0;
+}

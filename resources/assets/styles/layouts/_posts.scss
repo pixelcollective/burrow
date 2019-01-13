@@ -12,7 +12,7 @@ body > main > article {
 
   .byline.author.vcard {
     @include mt3;
-    @include mb5;
+    @include mb3;
   }
 
   .entry-jump a {

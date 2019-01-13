@@ -37,7 +37,7 @@ add_action('after_setup_theme', function () {
      * Add theme support for Wide Alignment
      * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#wide-alignment
      */
-    add_theme_support( 'align-wide' );
+    add_theme_support('align-wide');
 
     /**
      * Add editor styles
@@ -51,13 +51,13 @@ add_action('after_setup_theme', function () {
      * Enable responsive embeds
      * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#responsive-embedded-content
      */
-    add_theme_support( 'responsive-embeds' );
+    add_theme_support('responsive-embeds');
 
     /**
      * Enable Editor color palette support
      * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#block-color-palettes
      */
-    add_theme_support( 'editor-color-palette', array(
+    add_theme_support('editor-color-palette', array(
         array(
             'name' => __( 'strong magenta', 'sage' ),
             'slug' => 'strong-magenta',

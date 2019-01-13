@@ -41,18 +41,19 @@ article > main.entry-content + footer {
   }
 
   .comment-content * {
-    @include f7;
+    @include f6;
   }
 
-  a.comment-reply-link {
+  a.comment-reply-link,
+  a.comment-edit-link {
     @include button;
-    @include pb0;
-    @include f7;
-    @include ttu;
+  }
+
+  a.comment-edit-link {
+    @include ml2;
   }
 
   .comment-respond {
-    @include pt2;
     @include mv4;
   }
 }

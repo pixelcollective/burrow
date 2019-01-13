@@ -22,7 +22,7 @@ body {
     > h4,
     > h5,
     > h6 {
-      @include f-headline;
+      @include f1;
       @include sans-serif;
     }
 
@@ -38,7 +38,6 @@ body {
 
     > h1 {
       @include f1;
-      @include f-headline;
     }
 
     > h1 > span {

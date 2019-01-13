@@ -3,12 +3,16 @@
   @include items-center;
   @include justify-center;
   @include relative;
-  @include pv6;
+  @include pv7;
+  @include cover;
+  @include bg-center;
+
+  background-size: 100%;
 
   h2,
   .wp-block-cover-text {
     @include relative;
-    @include pv5;
+    @include pv6;
     @include white;
     @include z-3;
 
@@ -18,7 +22,7 @@
   }
 
   &.has-parallax {
-    @include fixed;
+    background-attachment: fixed;
   }
 
   &.has-background-dim::before {

@@ -1,34 +1,14 @@
-main > article > main {
-  > * {
-    @include ml-auto;
-    @include mr-auto;
-    @include mw6-m;
-    @include mw7-l;
-    @include ph2;
-    @include mv4;
-  }
-
-  > .wrap {
-    @include w-100;
-    @include mw-none;
-    @include mh0;
-    @include ph0;
-  }
-
-  > .wrap > .alignfull {
-    @include w-100;
-    @include mw-100;
-    @include ma0;
-    @include ph0;
-  }
-
-  > .wrap > .alignwide {
-    @include vw-90-m;
-    @include vw-80-l;
-    @include mv0;
-    @include ml-auto;
-    @include mr-auto;
-  }
+.gutenberg {
+  @import "blocks/wrapper";
+  @import "blocks/wp-block-columns";
+  @import "blocks/wp-block-separator";
+  @import "blocks/wp-block-gallery";
+  @import "blocks/wp-block-button";
+  @import "blocks/wp-block-quote";
+  @import "blocks/wp-block-cover";
+  @import "blocks/wp-block-images";
+  @import "blocks/media";
+  @import "blocks/lists";
+  @import "blocks/dropcap";
+  @import "blocks/preformatted";
 }
-
-@import "wp-blocks/wp-blocks.scss";
